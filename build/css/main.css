@@ -1,0 +1,174 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Open Sans", sans-serif; }
+
+body {
+  background-image: url("../img/bg/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.calc__main-wrapper {
+  width: 1072px;
+  height: 650px;
+  border: 2px solid #efae02;
+  margin: 115px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.calc__tab-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 25px; }
+  .calc__tab-block > div[class^='tab-block__tab-item']:not(:last-child) {
+    margin-right: 2px; }
+
+.tab-block__tab-item {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  width: 200px;
+  padding: 27px 0 25px 0;
+  font-size: 18px;
+  color: #cecece;
+  letter-spacing: -0.18px;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.77)), to(#323131));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.77) 0%, #323131 100%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.77) 0%, #323131 100%); }
+  .tab-block__tab-item.tab-block__tab-item--left {
+    border-radius: 15px 0 0 0; }
+  .tab-block__tab-item.tab-block__tab-item--right {
+    border-radius: 0 15px 0 0; }
+  .tab-block__tab-item.tab-block__tab-item--active {
+    background-image: none;
+    color: #000;
+    background-color: #efae02; }
+    .tab-block__tab-item.tab-block__tab-item--active:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #efae02;
+      left: 0;
+      bottom: -8px; }
+
+.calc__input-block {
+  margin-bottom: 30px; }
+
+.input-block__input-item {
+  width: 773px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 26px; }
+  .input-block__input-item:not(:last-child) {
+    margin-bottom: 26px; }
+  .input-block__input-item span {
+    position: relative;
+    height: 35px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.3px; }
+    .input-block__input-item span:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #efae02;
+      left: 0;
+      bottom: -8px; }
+  .input-block__input-item input {
+    text-align: center;
+    height: 60px;
+    width: 132px;
+    background-color: transparent;
+    border: 3px solid #efae02;
+    color: #efae02;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.48px; }
+
+.calc__additional {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  text-align: center; }
+  .calc__additional .add__title, .calc__additional label {
+    color: #efae02; }
+  .calc__additional .checkbox-wrapper__checkbox-item {
+    display: block; }
+    .calc__additional .checkbox-wrapper__checkbox-item:not(:last-child) {
+      margin-bottom: 20px; }
+  .calc__additional .add__checkbox-wrapper {
+    text-align: left;
+    margin-top: 5px; }
+  .calc__additional input[type='checkbox'] {
+    display: none; }
+  .calc__additional .checkbox-item__custom {
+    position: relative;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    border: 3px solid #ffffff;
+    vertical-align: middle; }
+  .calc__additional input[type='checkbox']:checked + .checkbox-item__custom:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efae02; }
+
+.calc__total-cost {
+  width: 690px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 48px;
+  margin-top: 30px; }
+  .calc__total-cost .total-cost__title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.36px; }
+  .calc__total-cost .total-cost__cost {
+    position: relative;
+    color: #efae02;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.56px; }
+    .calc__total-cost .total-cost__cost:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #efae02;
+      left: 0;
+      bottom: 5px; }
